@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 
-public class Tune {
+public class Tune implements Player{
 	private int x;
 	private String title, altTitle, notation;
 

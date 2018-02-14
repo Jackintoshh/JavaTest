@@ -38,6 +38,24 @@ public class TuneBook{
             }
         }
 	}
+
+	public Tune findTune(String title)
+	{
+		for(Tune t:tunes)
+		{
+			if(title == t.title)
+			{
+				return t.title;
+			}
+		}
+	}
 		
-			
+	public static void main(String[] args)
+    {
+        TuneBook tb = new TuneBook("hnj0.abc");
+        System.out.println(tb);
+
+        Tune t = tb.findTune("Scotsman over the Border");
+        t.play();
+    }
 }
