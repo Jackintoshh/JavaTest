@@ -13,16 +13,14 @@ public class Tune{
 		this.x = x;
 		this.title = title;
 		this.altTitle = altTitle;
-		this.notation = notation
+		this.notation = notation;
 	}
 
 	public String toString()
     {
         StringBuffer sb = new StringBuffer();
         
-        sb.append(word + ", ");
-        
-        
+        sb.append(x + ", " + title + ", " + altTitle);
 
         return sb.toString();
 

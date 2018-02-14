@@ -14,10 +14,10 @@ public class TuneBook{
         try {
             inputStream = new BufferedReader(new FileReader(filename));
             
-            //String l;
+            String l;
             while ((l = inputStream.readLine()) != null) {
-            	Tune t = new Tune();
-                tunes.add(t);
+            	//Tune t = new Tune(x, title, altTitle, notation);
+                tunes.add(l);
             }
         }
         catch (IOException e)
