@@ -16,5 +16,15 @@ public class Tune{
 		this.notation = notation
 	}
 
-	
+	public String toString()
+    {
+        StringBuffer sb = new StringBuffer();
+        
+        sb.append(word + ", ");
+        
+        
+
+        return sb.toString();
+
+    }
 }
